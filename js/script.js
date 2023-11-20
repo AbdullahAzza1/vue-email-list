@@ -1,6 +1,6 @@
 const {createApp} = Vue
 for (let i = 0; i < userMail.length; i++) {
-    text += userMail[i]  ;
+    userMail += mail[i]  ;
   }
 createApp({
     data() {
