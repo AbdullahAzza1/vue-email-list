@@ -1,7 +1,5 @@
 const {createApp} = Vue
-for (let i = 0; i < userMail.length; i++) {
-    userMail += mail[i]  ;
-  }
+
 createApp({
     data() {
         return {
