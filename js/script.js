@@ -1,4 +1,4 @@
-const {createApp} = Vue
+const { createApp } = Vue
 
 createApp({
     data() {
@@ -7,17 +7,18 @@ createApp({
             userMail: ""
         }
     },
-    
+
     methods: {
         generaMail() {
-            axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then(response => {
+            
+            for (let i = 0; i < 10; i++) {
+                axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then(response => {
                 this.userMail = response.data.response;
+                
             });
-            for (let i = 0; i < userMail.length; i++) {
-                userMail += mail[i]  ;
-              }
+            }
         }
     },
 
 })
-.mount('#app')
+    .mount('#app')
