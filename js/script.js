@@ -1,7 +1,9 @@
 const {createApp} = Vue
+
 for (let i = 0; i < cars.length; i++) {
     
   }
+  
 createApp({
     data() {
         return {
